@@ -1,0 +1,156 @@
+.titled{
+    color: yellow;
+    text-align: center;
+    font-size: 60px;
+}
+.q{
+    font-size: 40px;
+    color: yellow;
+    margin-left: 15px;
+}
+.border1 {
+    background: yellow;
+    width: 280px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 1%;
+    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.imageOne{
+    background-image: url(drq1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:250px;
+    width:250px;
+    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.imageTwo{
+    background-image: url(entq1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:250px;
+    width:250px;
+    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.imageThree{
+    background-image: url(cheetq1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:250px;
+    width:250px;
+    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.imageFour{
+    background-image: url(artq1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:250px;
+    width:250px;
+    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #000;
+}
+
+.row{
+    background-image: url(bck2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 15px;
+    width: 100%;
+
+}
+.row2{
+    background-image: url(bck3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-bottom: 15px;
+    height: 500px;
+}
+.row3 {
+    background-image: url(bck4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 15px;
+    height: 500px;
+}
+.row4 {
+    background-image: url(bck2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 15px;
+    height: 500px;
+}
+.border2{
+    background: yellow;
+    padding:7px 7px 7px 7px;
+    border-radius: 2%;
+    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    width: 300px;
+    margin-top: 10px;
+}
+.border3 {
+    background: black;
+    margin-left: 25%;
+    margin-top: 50px;
+    width: 50%;
+    padding: 5px 5px 5px 5px;
+    border-radius: 1%;
+    box-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
+}
+input[type=range]{
+    -webkit-appearance: none;
+    width: 100%;
+
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: goldenrod;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: yellow;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: goldenrod;
+}
+.food{
+    height: 250px;
+    width: 250px;
+    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.ClickMe{
+    margin-left: 50%;
+    margin-top: 10px;
+}

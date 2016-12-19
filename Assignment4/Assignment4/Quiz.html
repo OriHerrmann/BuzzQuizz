@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BuzzFeed Sunny</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+
+</head>
+<body>
+
+<form action="" id="myForm" onsubmit="return false;">
+    <fieldset>
+<div class="col-xs-12">
+        <h1 class="titled">Are You Apart of The Gang!</h1>
+</div>
+        <div class="row">
+            <p class="q">What is your dream job?</p>
+            <div class="col-xs-6">
+                <div class="qOne">
+                    <div class="border1">
+                        <div class="imageOne"></div>
+                        <input type="radio" name="job" value="Doctor" onclick="calculateTotal()"/> Doctor
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6">
+                <div class="qOne">
+                    <div class="border1">
+                        <div class="imageTwo"></div>
+                        <input type="radio" name="job" value="Entrepreneur" onclick="calculateTotal()"/> Entrepreneur
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="qOne">
+                    <div class="border1">
+                        <div class="imageThree"></div>
+                        <input type="radio" name="job" value="Man Cheetah" onclick="calculateTotal()"/> Man Cheetah
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6">
+                <div class="qOne">
+                    <div class="border1">
+                        <div class="imageFour"></div>
+                        <input type="radio" name="job" value="Artist" onclick="calculateTotal()"/> Artist
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        <div class="row2">
+            <p class="q">How much cheese is too much cheese?</p>
+
+        <select id="cheese" name='cheese'
+                onchange="calculateTotal()">
+            <option value="None">Cheese???</option>
+            <option value="AA">Any Amount</option>
+            <option value="NE">Never Enough Cheese</option>
+            <option value="OW">About One Wheel</option>
+            <option value="LI">I'm Lactose Intolerant</option>
+        </select>
+            </div>
+
+        <div class="row3">
+        <p class="q">Which of the following interests you?</p>
+            <div class="border2">
+        <p>
+            <label class="inlinelabel">
+                Magnets</label>
+            <input type="checkbox" id="magnets" name='magnets' onclick="calculateTotal()" />
+
+        </p>
+                </div>
+
+            <div class="border2">
+        <p>
+            <label class="inlinelabel">
+                Snails</label>
+            <input type="checkbox" id="snail" name="snail" onclick="calculateTotal()" />
+
+        </p>
+                </div>
+
+            <div class="border2">
+        <p>
+            <label class="inlinelabel">
+                Robes</label>
+            <input type="checkbox" id="robe" name='robe' onclick="calculateTotal()" />
+
+        </p>
+                </div>
+
+            <div class="border2">
+        <p>
+            <label class="inlinelabel">
+                Ghouls</label>
+            <input type="checkbox" id="ghouls" name="ghouls" onclick="calculateTotal()" />
+
+        </p>
+            </div>
+            </div>
+
+            <div class="row">
+                <div class="question">
+                    <p class="q">What food looks most appealing?</p>
+                </div>
+                <div class="col-xs-6">
+                    <div class="qOne">
+                        <div class="border1">
+                            <label>
+								<input type="radio" name="food" value="yellow" onclick="calculateTotal()"/>
+								<img src="cheese.jpg" class="food"/>				
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6">
+                    <div class="qOne">
+                        <div class="border1">
+                            <label>
+								<input type="radio" name="food" value="rum" onclick="calculateTotal()"/>
+								<img src="rumham.jpg" class="food"/>			
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="qOne">
+                        <div class="border1">
+                            <label>
+								<input type="radio" name="food" value="steak" onclick="calculateTotal()"/>
+								<img src="milks.jpg" class="food"/>			
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6">
+                    <div class="qOne">
+                        <div class="border1">
+                            <label>
+								<input type="radio" name="food" value="cream" onclick="calculateTotal()"/>
+								<img src="whip.jpg" class="food"/>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div id="totalScore"></div>
+
+                <input id="clickMe" type="button" class="ClickMe" value="SUBMIT" onclick="results();" />
+                </div>
+
+</div>
+
+    </fieldset>
+</form>
+
+<script src="formcalculations.js"></script>
+</body>
+</html>
